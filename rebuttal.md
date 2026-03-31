@@ -64,8 +64,7 @@
 | Swordsman | Prefix | 58.68±3.71            | 4.54±1.15                 | 63.88±6.12           | 7.99±2.71                | 52.55±3.26    | 3.69±1.76         |
 | Swordsman | Dual   | 73.74±3.85            | 3.66±1.26                 | 75.85±4.68           | 6.74±2.53                | 64.97±3.32    | 3.03±1.23         |
 
-
-**Table 6**: Variance of performance metrics ( three models on GSM8K 5-shot). Results indicate that while Fast-dLLM achieves average performance comparable to Swordsman in certain cases, it exhibits significantly higher variance, highlighting its inherent instability during generation.
+**Table 6**: Variance of performance metrics ( three models on GSM8K 5-shot ). Experimennt settings are same with Table 2 in our paper, where batchsize is 1,and tested on 1319 samples (GSM8K). Results indicate that while Fast-dLLM achieves average performance comparable to Swordsman in certain cases, it exhibits significantly higher variance, highlighting its inherent instability during generation.
 
 
 | Method    | Accuracy | TPS   | Latency |
