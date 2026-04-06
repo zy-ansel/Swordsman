@@ -1,3 +1,18 @@
+![Figure 18](figures/tps_scatter.png)
+
+**Figure 18**: Scatter plots of sample-level throughput (TPS) for Fast-dLLM (left) and Swordsman (right) across three models (top to bottom: LLaDA-8B-Instruct, Dream-v0-base-7B, and LLaDA-1.5). In each subplot, the x-axis represents the sample index, and the y-axis denotes the throughput (TPS, tokens/s). Both scatter points (individual samples) and solid horizontal lines (mean throughput) are color-coded by cache configuration: None Cache (blue), Prefix Cache (orange), and Dual Cache (green). Results are evaluated on GSM8K (5-shot, 1319 samples) with a batch size of 1.
+
+| Method    | Cache  | LLaDA-8B-Instruct | Dream-v0-base-7B | LLaDA-1.5 |
+| --------- | ------ | ----------------- | ---------------- | --------- |
+| Fast-dLLM | None   | 24.11             | 19.10            | 15.68     |
+| Fast-dLLM | Prefix | 34.46             | 43.69            | 14.29     |
+| Fast-dLLM | Dual   | 21.62             | 26.63            | 14.59     |
+| Swordsman | None   | 13.62             | 17.89            | 9.92      |
+| Swordsman | Prefix | 13.76             | 37.45            | 10.63     |
+| Swordsman | Dual   | 14.82             | 21.90            | 11.02     |
+
+**Table 15**: Variance of throughput for Fast-dLLM and Swordsman under three cache strategies across three models. Results are evaluated on GSM8K (5-shot, 1319 samples) with a batch size of 1.
+
 
 ![Figure 11](figures/entropy_dynamics.png)
 
